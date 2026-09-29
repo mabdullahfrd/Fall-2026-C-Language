@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<stdio.h>
+#define SECONDS_PER_MINUTE 60
+
+int main() {
+
+    int input, minute, second;
+
+    printf("Enter the seconds: ");
+    scanf("%d", &input);
+
+    minute = input / SECONDS_PER_MINUTE;
+    second = input % SECONDS_PER_MINUTE;
+    
+    printf("There are %d minutes and %d seconds.\n", minute, second);
+    return 0;
+}
